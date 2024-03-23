@@ -15,7 +15,7 @@ export const Viewer = ({ src, setImage, slides }) => {
 
   return (
     <>
-      <div className="center">
+      <div className="center container">
         <div className="hstack gap-3 text-center">
           <button
             type="button"

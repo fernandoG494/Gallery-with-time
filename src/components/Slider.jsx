@@ -1,8 +1,6 @@
 import React from "react";
 
 export const Slider = ({ slides, selected }) => {
-  console.log(slides);
-
   return (
     <>
       <div className="mt-2 text-center">
