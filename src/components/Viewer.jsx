@@ -1,18 +1,6 @@
 import React from "react";
 
-export const Viewer = ({ src, setImage, slides }) => {
-  const nextImage = () => {
-    const currentIndex = slides.indexOf(src);
-    const nextIndex = (currentIndex + 1) % slides.length;
-    setImage(slides[nextIndex]);
-  };
-
-  const prevImage = () => {
-    const currentIndex = slides.indexOf(src);
-    const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
-    setImage(slides[prevIndex]);
-  };
-
+export const Viewer = ({ src, prevImage, nextImage }) => {
   return (
     <>
       <div className="center container">
