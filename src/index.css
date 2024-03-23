@@ -2,8 +2,8 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
-  min-height: 25em;
-  max-height: 25em;
+  min-height: 30em;
+  max-height: 30em;
   overflow: hidden;
 }
 
@@ -15,7 +15,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 100%;
 }
 
 .unselectable {
