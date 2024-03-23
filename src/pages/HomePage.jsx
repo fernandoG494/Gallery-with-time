@@ -12,13 +12,19 @@ const slides = [flowers, james, nature, tree, space];
 
 export const HomePage = () => {
   const [image, setImage] = useState(slides.at(0));
+  const [autoScroll, setAutoScroll] = useState(false);
 
   return (
     <>
       <Viewer src={image} setImage={setImage} slides={slides} />
       <hr />
 
-      <Slider selected={image} slides={slides} />
+      <Slider
+        selected={image}
+        slides={slides}
+        autoScroll={autoScroll}
+        setAutoScroll={setAutoScroll}
+      />
     </>
   );
 };
