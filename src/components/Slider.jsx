@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export const Slider = ({ slides, selected, autoScroll, setAutoScroll }) => {
   function handleCheckboxChange(event) {

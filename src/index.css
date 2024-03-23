@@ -1,4 +1,7 @@
 .img-container {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
   min-height: 25em;
   max-height: 25em;
   overflow: hidden;

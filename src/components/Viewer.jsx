@@ -11,9 +11,7 @@ export const Viewer = ({ src, prevImage, nextImage }) => {
             onClick={prevImage}>
             {"<"}
           </button>
-          <div>
-            <img src={src} className="img-fluid img-container" />
-          </div>
+          <img src={src} className="img-fluid img-container" />
           <button
             type="button"
             className="btn btn-secondary btn-sm"
