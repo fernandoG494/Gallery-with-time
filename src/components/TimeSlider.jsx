@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const TimeLine = () => {
+export const TimeLine = ({ nextImage }) => {
   const [timeLeft, setTimeLeft] = useState(3);
 
   useEffect(() => {
@@ -8,6 +8,7 @@ export const TimeLine = () => {
       setTimeLeft((prevTime) => {
         if (prevTime === 1) {
           clearInterval(countdown);
+          nextImage();
           return 3;
         } else {
           return prevTime - 1;
@@ -18,5 +19,11 @@ export const TimeLine = () => {
     return () => clearInterval(countdown);
   }, [timeLeft]);
 
-  return <>Time left: {timeLeft} </>;
+  return (
+    <>
+      <p>
+        <em>Time left: {timeLeft} </em>
+      </p>
+    </>
+  );
 };

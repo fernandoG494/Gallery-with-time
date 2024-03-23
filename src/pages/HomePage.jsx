@@ -44,7 +44,7 @@ export const HomePage = () => {
         setAutoScroll={setAutoScroll}
       />
 
-      {autoScroll ? <TimeLine /> : ""}
+      {autoScroll ? <TimeLine nextImage={nextImage} /> : ""}
     </>
   );
 };
