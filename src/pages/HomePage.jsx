@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Viewer } from "../components/Viewer";
 import { Slider } from "../components/Slider";
 
@@ -10,10 +10,14 @@ import tree from "../assets/3.jpg";
 const slides = [flowers, james, nature, tree];
 
 export const HomePage = () => {
+  const [image, setImage] = useState(slides.at(0));
+
   return (
     <>
-      <Viewer src={flowers} />
-      <Slider slides={slides} />
+      <Viewer src={image} setImage={setImage} slides={slides} />
+      <hr />
+
+      <Slider selected={image} slides={slides} />
     </>
   );
 };
