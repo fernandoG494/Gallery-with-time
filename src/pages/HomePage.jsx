@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Viewer } from "../components/Viewer";
 import { Slider } from "../components/Slider";
-import { TimeLine } from "../components/TimeSlider";
+import { TimeLine } from "../components/TimeLine";
 
 import flowers from "../assets/0.jpg";
 import james from "../assets/1.jpg";
